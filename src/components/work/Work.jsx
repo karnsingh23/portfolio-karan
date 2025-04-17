@@ -48,7 +48,7 @@ function Work() {
          <Card
           video={getfit}
           heading="GetFit – Your Fitness Companion"
-          description="A sleek movie browsing platform where users can explore trending films, view detailed info, and manage their favorites. Built with React, it offers a smooth UI for discovering your next watch — fast, responsive, and user-friendly."
+          description="Get Fit is your go-to fitness platform offering personalized workout plans, nutrition tips, and progress tracking to help you achieve your health goals."
           technology={["MongoDB", "Express", "React", "Node.js"]}
           githubLink="https://github.com/karnsingh23/Get-Fit"
           liveLink="https://get-fit-nk.vercel.app/"
