@@ -1,0 +1,277 @@
+.hero-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 200px;
+  flex-wrap: wrap;
+}
+
+.left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mesg {
+  font-size: 50px;
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+#highlight {
+  color: #bb86fc;
+}
+
+.connect-btn {
+  background-color: #bb86fc;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 180px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.connect-btn:hover {
+  background-color: #9e6ad6;
+  cursor: pointer;
+}
+
+.right-part {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.connect {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accounts {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.acc {
+  color: #bb86fc;
+}
+
+.laptop {
+  width: 500px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.code-block {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: monospace;
+  line-height: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+.hero-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+.keyword {
+  color: #569CD6;
+}
+
+.variable {
+  color: #9CDCFE;
+}
+
+.key {
+  color: #DCDCAA;
+}
+
+.string {
+  color: #CE9178;
+}
+
+.boolean {
+  color: #569CD6;
+}
+
+.indent {
+  margin-left: 2ch;
+}
+
+.blinker {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background-color: #ffffff;
+  margin-left: 2px;
+  animation: blinker 1s step-start infinite;
+  vertical-align: bottom;
+}
+.mesg {
+  font-size: 50px;
+  white-space: nowrap;
+  font-weight: 800;
+  display: inline-block; /* Ensure it's inline */
+  text-align: left; /* Align text to the left */
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+  .hero-container,
+  .hero-two {
+    padding: 0px 100px;
+  }
+
+  .mesg {
+    font-size: 40px;
+    text-align: left; 
+  }
+
+  .hero-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .laptop {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container,
+  .hero-two {
+    flex-direction: column-reverse;
+    padding: 0px 30px;
+    gap: 40px;
+  }
+
+  .left-part,
+  .right-part {
+    width: 100%;
+    align-items: center;
+  }
+
+  .mesg {
+    font-size: 30px;
+    text-align: left; /* Ensure text stays left-aligned */
+    text-align: center; /* Align text to center for medium screens */
+  }
+
+  .connect-btn {
+    align-self: center;
+  }
+
+  .code-block {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .accounts {
+    gap: 15px;
+    font-size: 22px;
+  }
+
+  .laptop {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    padding: 0 20px;
+    margin-top: 80px;
+  }
+
+  .mesg {
+    font-size: 24px;
+  }
+
+  .connect-btn {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .hero-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .laptop {
+    width: 350px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .connect {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    margin: auto;
+  }
+
+  .accounts {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    font-size: 25px;
+  }
+
+  .code-block {
+    font-size: 13px;
+    padding: 15px;
+    width: 260px;
+    white-space: pre; 
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+  .hero-two{
+    margin-top: 120px;
+  }
+}

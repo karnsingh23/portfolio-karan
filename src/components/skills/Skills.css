@@ -1,0 +1,160 @@
+.skills-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0px 200px;
+  }
+  
+  .skills-container h1 {
+    font-size: 40px;
+    color: #bb86fc;
+    text-align: center;
+  }
+  
+  .skill-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .skill-img {
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skill-img:hover {
+    scale: 1.3;
+  }
+  
+  .part-one,
+  .part-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .cplus {
+    width: 60px;
+  }
+  .expressjs {
+    width: 70px;
+  }
+  .html {
+    width: 70px;
+  }
+  .css {
+    width: 70px;
+  }
+  .reactjs {
+    width: 130px;
+  }
+  .nodejs {
+    width: 90px;
+  }
+  
+  .skill-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .popup-msg {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .skill-wrapper:hover .popup-msg {
+    opacity: 1;
+  }
+  
+  /* ✅ Media Queries for Responsiveness */
+  
+  @media screen and (max-width: 1024px) {
+    .skills-container {
+      padding: 0px 100px;
+    }
+  
+    .part-one,
+    .part-two {
+      gap: 60px;
+    }
+  
+    .skill-img {
+      width: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      padding: 0px 50px;
+      gap: 60px;
+    }
+  
+  
+    .skill-img {
+      width: 70px;
+    }
+  
+    .popup-msg {
+      font-size: 14px;
+      top: -35px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skills-container {
+      padding: 0px 20px;
+    }
+  
+    .skill-img {
+      width: 60px;
+    }
+    .html{
+      width: 50px;
+    }
+    .js{
+      width: 80px;
+    }
+    .css{
+      width: 50px;
+    }
+    .reactjs{
+      width: 120px;
+    }
+    .cplus{
+      width: 40px;
+    }
+    .mongodb{
+      width: 90px;
+    }
+    .expressjs{
+      width: 40px;
+    }
+    .sql{
+      width: 80px;
+    }
+  
+    .popup-msg {
+      font-size: 12px;
+      top: -30px;
+    }
+  }
+  

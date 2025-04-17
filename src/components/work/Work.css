@@ -1,0 +1,51 @@
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+    padding: 0px 100px;
+}
+
+.work-container h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #bb86fc;
+    text-align: center;
+}
+
+/* 🔹 Responsive Project Layout */
+.first-half,
+.second-half {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ✅ Responsive for Tablets */
+@media screen and (max-width: 1024px) {
+    .work-container {
+        padding: 0px 50px;
+    }
+
+    .first-half,
+    .second-half {
+        gap: 50px;
+    }
+}
+
+/* ✅ Responsive for Mobile */
+@media screen and (max-width: 768px) {
+    .work-container {
+        padding: 0px 20px;
+    }
+
+    .first-half,
+    .second-half {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
